@@ -1,3 +1,3 @@
 # ludo
 
-Practicing here
+App for a practicing tool
