@@ -1,0 +1,20 @@
+# Directories
+node_modules/
+dist/
+coverage/
+
+# Files
+.env
+.env.*
+*.log
+
+# IDE and editor files
+.vscode/
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
