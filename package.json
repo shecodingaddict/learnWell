@@ -1,0 +1,27 @@
+{
+  "name": "ludo",
+  "version": "1.0.0",
+  "description": "App for a practicing tool",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shecodingaddict/ludo.git"
+  },
+  "author": "Princi Vershwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shecodingaddict/ludo/issues"
+  },
+  "homepage": "https://github.com/shecodingaddict/ludo#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
