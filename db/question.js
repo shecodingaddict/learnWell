@@ -1,13 +1,21 @@
 const Question = require("../models/question");
 
-async function createQuestion() {
-  const question = new Question({
-    questionId: 2,
-    createdBy: "Princi",
-    question: "What is the best programming language in the world?",
-  });
-  await question.save();
-  console.log("Question Saved");
+function createQuestion(newQuestion) {
+  newQuestion
+    .save()
+    .then(() => {
+      console.log("Question Saved");
+    })
+    .catch((err) => {
+      throw err;
+    });
 }
 
-module.exports = createQuestion;
+function findQuestion() {
+  console.log("Find Question");
+}
+
+module.exports = {
+  createQuestion,
+  findQuestion,
+};

@@ -14,14 +14,18 @@ const questionSchema = mongoose.Schema({
     type: String,
     required: true,
   },
+  questionType: { //Single select, Multi select //Todo: Add an Enum
+    type: String,
+    required: true,
+  },
   options: {
     type: Map,
     of: String,
-    //required: true,
+    required: true,
   },
   answer: {
-    type: Number,
-    //required: true,
+    type: [String],
+    required: true,
   },
   createdAt: {
     type: Date,
