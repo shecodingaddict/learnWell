@@ -12,7 +12,7 @@ function createQuestion(newQuestion) {
 }
 
 function findQuestion() {
-  console.log("Find Question");
+  //console.log("Find Question");
 }
 
 module.exports = {
