@@ -47,17 +47,17 @@ router.post("/submit", (req, res, next) => {
   try {
     console.log(req.body);
     const {questionId, userId, answer} = req.body;
-    // const newQuestion = new Question({
-    //   questionId: questionId,
-    //   createdBy: createdBy,
-    //   questionType: questionType,
-    //   question: question,
-    //   options: options,
-    //   answer: answer,
-    // });
-    // questionCollection.createQuestion(newQuestion).then(() => {
-    //   res.status(200).send("Question saved successfully");
-    // });
+    const newQuestion = new Question({
+      questionId: questionId,
+      createdBy: createdBy,
+      questionType: questionType,
+      question: question,
+      options: options,
+      answer: answer,
+    });
+    questionCollection.createQuestion(newQuestion).then(() => {
+      res.status(200).send("Question saved successfully");
+    });
   } catch (err) {
     res.status(200).send("Error in saving the question", err.message);
   }
