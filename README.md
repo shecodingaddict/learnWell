@@ -1,3 +1,3 @@
 # ludo
 
-App for a practicing tool
+App for a JS practicing tool
